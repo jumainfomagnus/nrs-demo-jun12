@@ -22,14 +22,14 @@ def main():
     pygame.init()
     
     # Create game window
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.RESIZABLE)
     pygame.display.set_caption("Snake Game")
     
     # Initialize clock for controlling game speed
     clock = pygame.time.Clock()
     
     # Center the game window on the screen
-    pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.RESIZABLE)
+    # Removed redundant call to pygame.display.set_mode
     
     # Main game loop
     running = True
